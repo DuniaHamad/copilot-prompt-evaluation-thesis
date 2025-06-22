@@ -30,9 +30,12 @@ function minimumLinesDetail(stockPrices: number[][]): number {
         const [x0, y0] = stockPrices[i - 2];
         const [x1, y1] = stockPrices[i - 1];
         const [x2, y2] = stockPrices[i];
-        if ((y2 - y1) * (x1 - x0) !== (y1 - y0) * (x2 - x1)) {
+        if (
+            (BigInt(y2) - BigInt(y1)) * (BigInt(x1) - BigInt(x0)) !==
+            (BigInt(y1) - BigInt(y0)) * (BigInt(x2) - BigInt(x1))
+        ) {
             count++;
         }
     }
     return count;
-}; 
+};
