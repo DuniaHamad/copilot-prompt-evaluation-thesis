@@ -1,12 +1,4 @@
-export class ListNode {
-    val: number;
-    next: ListNode | null;
-
-    constructor(val: number, next: ListNode | null = null) {
-        this.val = val;
-        this.next = next;
-    }
-}
+import { ListNode } from "./ListNode";
 
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
     let dummy = new ListNode(0);
@@ -25,5 +17,5 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     }
 
     return dummy.next;
-};
+}
 
