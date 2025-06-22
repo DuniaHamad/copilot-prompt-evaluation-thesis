@@ -1,3 +1,4 @@
+//Schreibe eine Funktion, die zwei verknüpfte Listen addiert, wobei jede Liste eine Zahl in umgekehrter Reihenfolge speichert. Gib die Summe als verknüpfte Liste zurück.
 import { ListNode } from "./ListNode";
 
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
