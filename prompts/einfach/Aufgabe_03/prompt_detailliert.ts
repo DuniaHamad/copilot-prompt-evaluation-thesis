@@ -1,4 +1,4 @@
-// Schreibe eine Python-Funktion most_common_word, die zwei Parameter erwartet:
+// Schreibe eine Funktion most_common_word, die zwei Parameter erwartet:
 
 // paragraph (ein String mit englischem Fließtext, der auch Satzzeichen wie !?',;. enthalten kann)
 

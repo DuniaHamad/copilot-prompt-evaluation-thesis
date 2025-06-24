@@ -14,7 +14,7 @@
 
 function findMedianSortedArraysDetail(nums1: number[], nums2: number[]): number {
     if (nums1.length > nums2.length) {
-        return findMedianSortedArrays(nums2, nums1);
+        return findMedianSortedArraysDetail(nums2, nums1);
     }
 
     const m = nums1.length;
