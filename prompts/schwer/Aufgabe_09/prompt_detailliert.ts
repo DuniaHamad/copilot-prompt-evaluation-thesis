@@ -58,4 +58,4 @@ export function maxXorQueriesDetail(nums: number[], queries: number[][]): number
 }
 
 // Beispieltest:
-console.log(maxXorQueries([0, 1, 2, 3, 4], [[3, 1], [1, 3], [5, 6]])); // [3, 3, 7]
+//console.log(maxXorQueriesDetail([0, 1, 2, 3, 4], [[3, 1], [1, 3], [5, 6]])); // [3, 3, 7]
