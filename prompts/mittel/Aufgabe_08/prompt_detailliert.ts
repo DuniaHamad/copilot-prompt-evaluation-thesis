@@ -28,4 +28,4 @@ function findPeakElementDetail(nums: number[]): number {
 }
 
 // Beispiel:
-console.log(findPeakElement([1, 2, 3, 1])); // Ausgabe: 2
+//console.log(findPeakElement([1, 2, 3, 1])); // Ausgabe: 2
