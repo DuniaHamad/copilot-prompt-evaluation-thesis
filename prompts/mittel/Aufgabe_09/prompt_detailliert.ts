@@ -39,9 +39,9 @@ function countAlternatingSubarraysDetail(nums: number[]): number {
     return total;
 }
 
-// Beispieltests:
-console.log(countAlternatingSubarrays([1, 0, 1, 0])); // 10
-console.log(countAlternatingSubarrays([0, 1, 1, 1])); // 5
-console.log(countAlternatingSubarrays([0, 0, 0]));    // 3
-console.log(countAlternatingSubarrays([1, 0, 0, 1])); // 5
+// // Beispieltests:
+// console.log(countAlternatingSubarrays([1, 0, 1, 0])); // 10
+// console.log(countAlternatingSubarrays([0, 1, 1, 1])); // 5
+// console.log(countAlternatingSubarrays([0, 0, 0]));    // 3
+// console.log(countAlternatingSubarrays([1, 0, 0, 1])); // 5
 
