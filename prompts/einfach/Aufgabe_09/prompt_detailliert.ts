@@ -39,8 +39,8 @@ function isPalindromeDetail(x: number): boolean {
     return x === reverted || x === Math.floor(reverted / 10);
 }
 
-// Beispieltests:
-console.log(isPalindrome(121));   // true
-console.log(isPalindrome(-121));  // false
-console.log(isPalindrome(10));    // false
-console.log(isPalindrome(1221));  // true
+// // Beispieltests:
+// console.log(isPalindrome(121));   // true
+// console.log(isPalindrome(-121));  // false
+// console.log(isPalindrome(10));    // false
+// console.log(isPalindrome(1221));  // true

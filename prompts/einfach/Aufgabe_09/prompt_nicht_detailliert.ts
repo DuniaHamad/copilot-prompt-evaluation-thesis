@@ -12,7 +12,7 @@ function isPalindrome(num: number): boolean {
     return str === str.split('').reverse().join('');
 }
 
-// Beispieltests:
-console.log(isPalindrome(121)); // true
-console.log(isPalindrome(123)); // false
-console.log(isPalindrome(1221)); // true
+// // Beispieltests:
+// console.log(isPalindrome(121)); // true
+// console.log(isPalindrome(123)); // false
+// console.log(isPalindrome(1221)); // true
