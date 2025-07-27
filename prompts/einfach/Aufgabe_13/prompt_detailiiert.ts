@@ -9,11 +9,11 @@
 
 
 
-type JSONValueDetail = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
+type JSONValueDetail = null | boolean | number | string | JSONValueDetail[] | { [key: string]: JSONValueDetail };
 type ObjDetail  = Record<string, JSONValueDetail> | Array<JSONValueDetail>;
 
 // Ab hier ist generierter Code
-function chunkDetail(arr: ObjDetail[], size: number): Obj[][] {
+function chunkDetail(arr: ObjDetail[], size: number): ObjDetail[][] {
     if (size < 1 || size > arr.length + 1) {
         throw new Error("size muss mindestens 1 und höchstens arr.length + 1 sein");
     }
