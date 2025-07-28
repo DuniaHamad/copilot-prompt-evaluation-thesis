@@ -92,7 +92,3 @@
 ## Fazit
 
 Die detaillierte Lösung ist kürzer, sehr gut lesbar, exakt an die Anforderungen angepasst und schnell genug für den vorgegebenen Wertebereich. Die nicht detaillierte Lösung ist algorithmisch effizienter (ggT-basiert), zeigt mehr mathematisches Verständnis, ist aber etwas länger, komplexer und reagierte in der Messung langsamer. Für einfache Verständlichkeit und klaren Fokus auf Vorgabe ist die detaillierte Lösung vorzuziehen. Für größere Wertebereiche oder weitere Optimierung ist die ggT-basierte Lösung geeignet.
-
----
-
-Falls gewünscht, kann die bessere Lösung weiter kommentiert oder optimiert werden.

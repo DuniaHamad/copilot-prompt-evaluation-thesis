@@ -30,6 +30,3 @@ Im Folgenden werden zwei verschiedene Prompts zur Lösung des Problems „kleins
 
 Eine präzise und ausführliche Prompt-Formulierung lohnt sich, da sie qualitativ besseren Code mit höherer Korrektheit und Lesbarkeit liefert – auch wenn die Antwort etwas länger dauert. Vage Prompts können für schnelle Prototypen sinnvoll sein, sind aber limitiert in Zuverlässigkeit und Qualität.
 
----
-
-Falls gewünscht, kann ich weitere Tipps geben, wie man Prompts optimal gestaltet, um eine gute Balance aus Effizienz, Korrektheit und Lesbarkeit zu erreichen.
