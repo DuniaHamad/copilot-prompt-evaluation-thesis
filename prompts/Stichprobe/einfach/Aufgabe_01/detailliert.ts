@@ -30,4 +30,4 @@ function twoSumProbe(nums: number[], target: number): [number, number] {
 }
 
 // Beispiel:
-console.log(twoSum([2, 7, 11, 15], 9)); // Ausgabe: [0, 1]
+//console.log(twoSum([2, 7, 11, 15], 9)); // Ausgabe: [0, 1]
