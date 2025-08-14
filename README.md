@@ -16,7 +16,7 @@ Dieses Projekt ist Teil meiner Bachelorarbeit und beschäftigt sich mit der **An
   - **Anzahl der Codezeilen**
   - **Anzahl der notwendigen Änderungen**
   - **Qualitative Bewertung** der Lösung auf einer Skala von 1 (unbrauchbar) bis 5 (sehr gut)
-- Entwicklung eines Frameworks für den strukturierten Einsatz von GitHub Copilot in kleinen Entwicklungsteams, das theoretisch fundiert ist und im Verlauf der Experimente iterativ weiterentwickelt wird.
+- Entwicklung eines Frameworks für den strukturierten Einsatz von GitHub Copilot, das theoretisch fundiert ist und im Verlauf der Experimente iterativ weiterentwickelt wird.
 
 ---
 
@@ -56,10 +56,7 @@ Dieses Projekt ist Teil meiner Bachelorarbeit und beschäftigt sich mit der **An
 ## Weitere Informationen
 
 - Tests ausschließlich in **TypeScript** für Konsistenz.  
-- GitHub Copilot Version: **1.336.0** (bitte aktualisieren, falls nötig).  
-- Die zentrale Datendatei `tests.xlsx` befindet sich im Ordner `data/`.  
-- Ausführliche Dokumentation liegt im Ordner `docs/`.
-
+- GitHub Copilot Version: **1.336.0**.  
 ---
 
 ## Kontakt
