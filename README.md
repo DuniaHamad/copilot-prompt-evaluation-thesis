@@ -2,72 +2,66 @@
 
 ## Projektübersicht
 
-Dieses Projekt ist Teil meiner Bachelorarbeit und beschäftigt sich mit der **Analyse der Leistungsfähigkeit von GitHub Copilot** bei der Bearbeitung von Programmieraufgaben aus der Plattform [LeetCode](https://leetcode.com/). Ziel ist es, zu untersuchen, wie sich unterschiedliche Formulierungen derselben Aufgabe und verschiedene Schwierigkeitsgrade auf die Qualität und Effizienz der von Copilot generierten Lösungen auswirken.
+Dieses Projekt ist Teil meiner Bachelorarbeit und beschäftigt sich mit der **Analyse der Leistungsfähigkeit von GitHub Copilot** bei der Bearbeitung von Programmieraufgaben von der Plattform [LeetCode](https://leetcode.com/). Ziel ist es, zu untersuchen, wie sich unterschiedliche Formulierungen derselben Aufgabe sowie verschiedene Schwierigkeitsgrade auf die Qualität und Effizienz der von Copilot generierten Lösungen auswirken.
 
 ---
 
 ## Projektziele
 
-- Auswahl von **50 Programmieraufgaben** aus LeetCode, ausschließlich in der Programmiersprache **TypeScript**.
-- Jede Aufgabe wird **zweimal unterschiedlich formuliert** (detailliert vs. weniger detailliert), um den Einfluss der Prompt-Formulierung auf die Copilot-Antwort zu testen.
-- Aufgaben werden nach Schwierigkeitsgrad (leicht, mittel, schwer) kategorisiert.
-- Messung und Dokumentation folgender Metriken bei jeder Copilot-Antwort:
+- Auswahl von **50 Programmieraufgaben** aus LeetCode, ausschließlich in **TypeScript**.
+- Jede Aufgabe wird **zweimal unterschiedlich formuliert** (detailliert vs. kurz), um den Einfluss der Prompt-Formulierung zu analysieren.
+- Kategorisierung der Aufgaben nach Schwierigkeitsgrad (leicht, mittel, schwer).
+- Erfassung folgender Metriken für jede Copilot-Antwort:
   - **Reaktionszeit** (Zeit bis zur ersten Ausgabe)
   - **Anzahl der Codezeilen**
-  - **Anzahl der notwendigen Änderungen** im generierten Code
-  - **Bewertung der Lösung** (Skala 1-5, wobei 5 = sehr gut, 1 = unbrauchbar)
-- Entwicklung eines Frameworks zur strukturierten Nutzung von GitHub Copilot in kleinen Entwicklungsteams basierend auf den Ergebnissen.
+  - **Anzahl der notwendigen Änderungen**
+  - **Qualitative Bewertung** der Lösung auf einer Skala von 1 (unbrauchbar) bis 5 (sehr gut)
+- Entwicklung eines Frameworks für den strukturierten Einsatz von GitHub Copilot in kleinen Entwicklungsteams, das theoretisch fundiert ist und im Verlauf der Experimente iterativ weiterentwickelt wird.
 
 ---
 
+## Vorgehensweise
 
-## Vorgehensweise bei der Durchführung der Tests
+1. **Aufgabenauswahl**  
+   Auswahl von 50 LeetCode-Problemen in TypeScript, repräsentativ für alle Schwierigkeitsgrade.
 
-1. **Aufgabenauswahl:**  
-   Auswahl von 50 LeetCode-Problemen, alle in TypeScript lösbar und repräsentativ für verschiedene Schwierigkeitsgrade.
+2. **Prompt-Formulierung**  
+   Für jede Aufgabe werden zwei Prompts erstellt:  
+   - Detaillierte Beschreibung mit Beispielen, welche vor allem mithilfe von **ChatGPT** auf Basis der LeetCode-Aufgabeninformationen formuliert wurden.  
+   - Kurzfassung, knapp und ohne Zusatzdetails.
 
-2. **Prompt-Formulierung:**  
-   Für jede Aufgabe werden zwei unterschiedliche Prompts erstellt:
-   - **Detaillierte Beschreibung:** Ausführliche Erklärung mit Beispielen.
-   - **Kurzfassung:** Knapp gehaltene Problemstellung ohne zusätzliche Details.
+3. **Testdurchführung**  
+   Eingabe der Prompts in Visual Studio Code mit GitHub Copilot (Version 1.336.0) und Dokumentation der automatisch generierten Lösungen.
 
-3. **Testdurchführung:**  
-   In Visual Studio Code mit GitHub Copilot (Version 1.336.0) werden die Prompts eingegeben, und die automatisch generierten Lösungen dokumentiert.
+4. **LeetCode-Auswertung**  
+   Copilot-Lösungen werden bei LeetCode eingereicht und automatisch geprüft.  
+   - Korrekte Lösungen werden dokumentiert.  
+   - Fehler werden zurück an Copilot gegeben, um Korrekturen vorzunehmen.  
+   - Dieser Prozess wiederholt sich bis zur korrekten Lösung, inklusive Dokumentation der Wiederholungen.
 
-4. **LeetCode-Auswertung:**  
-   Die von GitHub Copilot generierten Lösungen werden direkt bei LeetCode eingereicht und automatisch bewertet. LeetCode prüft die Antwort auf Korrektheit durch mehrere Use Cases und Tests.  
-   - Ist die Lösung richtig, wird der Vorgang dokumentiert.  
-   - Bei einer falschen Antwort oder einem Fehler zeigt LeetCode die Problempunkte an.  
-   - Die korrigierten Hinweise und Fehlermeldungen werden an GitHub Copilot zurückgegeben, um die Lösung zu überarbeiten.  
-   - Dieser Prozess der Eingabe, Bewertung und Anpassung wird wiederholt (Anzahl der Wiederholungen wird dokumentiert), bis eine korrekte Lösung vorliegt.
+5. **Dokumentation**  
+   Protokollierung jeder Iteration mit Metriken wie Anzahl der Wiederholungen, Zeit bis zur finalen Lösung und Codezeilenanzahl.
 
-5. **Dokumentation:**  
-   Jede Iteration wird protokolliert mit:  
-   - Anzahl der Wiederholungen bis zur richtigen Lösung  
-   - Zeit bis zur endgültigen korrekten Antwort  
-   - Anzahl der Codezeilen der finalen Lösung  
-6. **Auswertung:**  
-   Die gesammelten Daten werden in Excel und automatisierten Skripten ausgewertet, um Rückschlüsse auf Effizienz, Qualität und Authentizität der von Copilot generierten Lösungen zu ziehen.
+6. **Qualitative Bewertung**  
+   Bewertung der Lösungsqualität anhand festgelegter Skalen, unterstützt durch **ChatGPT**, um eine konsistente und fundierte Beurteilung zu gewährleisten.
 
-7. **Framework-Entwicklung:**  
-   Basierend auf den Erkenntnissen wird ein Framework für den effektiven Einsatz von GitHub Copilot in kleinen Teams entwickelt.
+7. **Datenanalyse**  
+   Auswertung der gesammelten Daten mit Excel und Skripten zur Analyse von Effizienz, Qualität und Authentizität.
+
+8. **Framework-Entwicklung**  
+   Aufbau eines theoretisch fundierten und experimentell iterativ weiterentwickelten Frameworks für den Einsatz von GitHub Copilot in kleinen Teams.
 
 ---
 
-## Hinweise
+## Weitere Informationen
 
-- Die Tests werden ausschließlich mit **TypeScript** durchgeführt, um eine konsistente Basis zu gewährleisten.
-- GitHub Copilot Version: **1.336.0** (bitte hier die tatsächlich verwendete Version eintragen).
-- Die Excel-Tabelle `tests.xlsx` im Ordner `data/` dient als zentrale Datenquelle für die Evaluation.
-- Weiterführende Dokumentation befindet sich im Ordner `docs/`.
+- Tests ausschließlich in **TypeScript** für Konsistenz.  
+- GitHub Copilot Version: **1.336.0** (bitte aktualisieren, falls nötig).  
+- Die zentrale Datendatei `tests.xlsx` befindet sich im Ordner `data/`.  
+- Ausführliche Dokumentation liegt im Ordner `docs/`.
 
 ---
 
 ## Kontakt
 
-Bei Fragen oder Anregungen zu diesem Projekt stehe ich gerne zur Verfügung.
-
----
-
-*Bachelorarbeit 2025 – [Dunia Hamad]*  
-*Betreuer: [Dennis Priefer]*
+Bei Fragen oder Anregungen stehe ich gerne zur Verfügung.
